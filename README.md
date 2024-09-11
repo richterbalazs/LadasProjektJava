@@ -9,5 +9,5 @@
 ![GUI](https://github.com/user-attachments/assets/2c7ada95-0842-43b7-ae23-b100e2e99c19)
 
 # Visszajelzés:
-Gombnyomás után egy felugró ablaknak kéne értesítenie a felhasználót, hogy jól tippelt volt e a tippja vagy sem.
+Gombnyomás után egy felugró ablaknak kéne értesítenie a felhasználót, hogy jól volt e a tippje vagy sem.
 (Szerintem a bronz ládában van a kincs)
