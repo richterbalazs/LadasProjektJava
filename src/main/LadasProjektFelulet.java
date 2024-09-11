@@ -26,125 +26,125 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        AranyladaKep = new javax.swing.JLabel();
-        AranyladaGomb = new javax.swing.JButton();
-        AranyladaLabel = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        EzustladaLabel = new javax.swing.JLabel();
-        EzustladaGomb = new javax.swing.JButton();
-        EzustladaKep = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        BronzladaLabel = new javax.swing.JLabel();
-        BronzladaKep = new javax.swing.JLabel();
-        BronzladaGomb = new javax.swing.JButton();
+        LeirasLabel = new javax.swing.JLabel();
+        CimLabel = new javax.swing.JLabel();
+        AranyLadaPanel = new javax.swing.JPanel();
+        AranyLadaKep = new javax.swing.JLabel();
+        AranyLadaGomb = new javax.swing.JButton();
+        AranyLadaLabel = new javax.swing.JLabel();
+        EzustLadaPanel = new javax.swing.JPanel();
+        EzustLadaLabel = new javax.swing.JLabel();
+        EzustLadaGomb = new javax.swing.JButton();
+        EzustLadaKep = new javax.swing.JLabel();
+        BronzLadaPanel = new javax.swing.JPanel();
+        BronzLadaLabel = new javax.swing.JLabel();
+        BronzLadaKep = new javax.swing.JLabel();
+        BronzLadaGomb = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
 
-        jLabel2.setText("A három ládából az egyik kincset rejt. Mindegyik ládán van egy felirat, melyből csak az egyik igaz.");
+        LeirasLabel.setText("A három ládából az egyik kincset rejt. Mindegyik ládán van egy felirat, melyből csak az egyik igaz.");
 
-        jLabel3.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        jLabel3.setText("Melyik láda rejti a kincset?");
+        CimLabel.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        CimLabel.setText("Melyik láda rejti a kincset?");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AranyLadaPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        AranyladaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/arany_lada.jpg"))); // NOI18N
+        AranyLadaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/arany_lada.jpg"))); // NOI18N
 
-        AranyladaGomb.setText("Aranyláda");
-        AranyladaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AranyLadaGomb.setText("Arany láda");
+        AranyLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        AranyladaLabel.setText("Én rejtem a kincset");
+        AranyLadaLabel.setText("Én rejtem a kincset");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout AranyLadaPanelLayout = new javax.swing.GroupLayout(AranyLadaPanel);
+        AranyLadaPanel.setLayout(AranyLadaPanelLayout);
+        AranyLadaPanelLayout.setHorizontalGroup(
+            AranyLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AranyLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(AranyladaGomb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AranyladaKep, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AranyladaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(AranyLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(AranyLadaGomb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AranyLadaKep, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AranyLadaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        AranyLadaPanelLayout.setVerticalGroup(
+            AranyLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AranyLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(AranyladaKep)
+                .addComponent(AranyLadaKep)
                 .addGap(18, 18, 18)
-                .addComponent(AranyladaLabel)
+                .addComponent(AranyLadaLabel)
                 .addGap(13, 13, 13)
-                .addComponent(AranyladaGomb)
+                .addComponent(AranyLadaGomb)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        EzustLadaPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        EzustladaLabel.setText("Nem én rejtem a kincset");
+        EzustLadaLabel.setText("Nem én rejtem a kincset");
 
-        EzustladaGomb.setText("Ezüstláda");
-        EzustladaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EzustLadaGomb.setText("Ezüst láda");
+        EzustLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        EzustladaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/ezust_lada.jpg"))); // NOI18N
+        EzustLadaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/ezust_lada.jpg"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout EzustLadaPanelLayout = new javax.swing.GroupLayout(EzustLadaPanel);
+        EzustLadaPanel.setLayout(EzustLadaPanelLayout);
+        EzustLadaPanelLayout.setHorizontalGroup(
+            EzustLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EzustLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(EzustladaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(EzustladaKep)
-                    .addComponent(EzustladaGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(EzustLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(EzustLadaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EzustLadaKep)
+                    .addComponent(EzustLadaGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        EzustLadaPanelLayout.setVerticalGroup(
+            EzustLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EzustLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EzustladaKep)
+                .addComponent(EzustLadaKep)
                 .addGap(18, 18, 18)
-                .addComponent(EzustladaLabel)
+                .addComponent(EzustLadaLabel)
                 .addGap(13, 13, 13)
-                .addComponent(EzustladaGomb)
+                .addComponent(EzustLadaGomb)
                 .addContainerGap())
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BronzLadaPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        BronzladaLabel.setText("Az arany láda hazudik");
+        BronzLadaLabel.setText("Az arany láda hazudik");
 
-        BronzladaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/bronz_lada.jpg"))); // NOI18N
+        BronzLadaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/bronz_lada.jpg"))); // NOI18N
 
-        BronzladaGomb.setText("Bronzláda");
-        BronzladaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BronzLadaGomb.setText("Bronz láda");
+        BronzLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout BronzLadaPanelLayout = new javax.swing.GroupLayout(BronzLadaPanel);
+        BronzLadaPanel.setLayout(BronzLadaPanelLayout);
+        BronzLadaPanelLayout.setHorizontalGroup(
+            BronzLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BronzLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BronzladaKep)
-                    .addComponent(BronzladaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BronzladaGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(BronzLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BronzLadaKep)
+                    .addComponent(BronzLadaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BronzLadaGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        BronzLadaPanelLayout.setVerticalGroup(
+            BronzLadaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BronzLadaPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(BronzladaKep)
+                .addComponent(BronzLadaKep)
                 .addGap(18, 18, 18)
-                .addComponent(BronzladaLabel)
+                .addComponent(BronzLadaLabel)
                 .addGap(13, 13, 13)
-                .addComponent(BronzladaGomb)
+                .addComponent(BronzLadaGomb)
                 .addContainerGap())
         );
 
@@ -154,34 +154,34 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(LeirasLabel)
                 .addGap(92, 92, 92))
             .addGroup(layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AranyLadaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(EzustLadaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(76, 76, 76)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BronzLadaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(61, 61, 61))
             .addGroup(layout.createSequentialGroup()
                 .addGap(244, 244, 244)
-                .addComponent(jLabel3)
+                .addComponent(CimLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(jLabel2)
+                .addComponent(LeirasLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(CimLabel)
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AranyLadaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(EzustLadaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BronzLadaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(19, 19, 19))
         );
@@ -226,19 +226,19 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AranyladaGomb;
-    private javax.swing.JLabel AranyladaKep;
-    private javax.swing.JLabel AranyladaLabel;
-    private javax.swing.JButton BronzladaGomb;
-    private javax.swing.JLabel BronzladaKep;
-    private javax.swing.JLabel BronzladaLabel;
-    private javax.swing.JButton EzustladaGomb;
-    private javax.swing.JLabel EzustladaKep;
-    private javax.swing.JLabel EzustladaLabel;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton AranyLadaGomb;
+    private javax.swing.JLabel AranyLadaKep;
+    private javax.swing.JLabel AranyLadaLabel;
+    private javax.swing.JPanel AranyLadaPanel;
+    private javax.swing.JButton BronzLadaGomb;
+    private javax.swing.JLabel BronzLadaKep;
+    private javax.swing.JLabel BronzLadaLabel;
+    private javax.swing.JPanel BronzLadaPanel;
+    private javax.swing.JLabel CimLabel;
+    private javax.swing.JButton EzustLadaGomb;
+    private javax.swing.JLabel EzustLadaKep;
+    private javax.swing.JLabel EzustLadaLabel;
+    private javax.swing.JPanel EzustLadaPanel;
+    private javax.swing.JLabel LeirasLabel;
     // End of variables declaration//GEN-END:variables
 }
