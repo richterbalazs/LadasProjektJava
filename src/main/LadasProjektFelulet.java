@@ -4,17 +4,45 @@
  */
 package main;
 
+import java.awt.Event;
+import javax.swing.JOptionPane;
+import java.util.Random;
+
 /**
  *
  * @author KosztolányiÁkos(SZF_
  */
 public class LadasProjektFelulet extends javax.swing.JFrame {
-
-    /**
-     * Creates new form LadasProjektFelulet
-     */
+    Random rn = new Random();
+    String tippeles;
+    String szoveg;
+    String jatek;
+    
+    
     public LadasProjektFelulet() {
         initComponents();
+        tippeles = " ";
+        szoveg = " ";
+        jatek = Jatek();
+    }
+    
+    private String Jatek(){
+        if(tippeles == "Ezüst"){
+            return "asd";
+        }else if(tippeles == "Arany"){
+            return "Arany";
+        }else if(tippeles == "Bronz"){
+            return "Bronz";
+        }
+        return " ";
+    }
+    
+      private void vegeredmeny() {
+        if(jatek == szoveg){
+            szoveg = "Sikeresen megtaláltad a kincset";
+        }else{
+            szoveg = "Sajnos nem sikerült megtaláni a kincset";
+        }
     }
 
     /**
@@ -56,6 +84,11 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
 
         AranyLadaGomb.setText("Arany láda");
         AranyLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AranyLadaGomb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AranyLadaGombActionPerformed(evt);
+            }
+        });
 
         AranyLadaLabel.setText("Én rejtem a kincset");
 
@@ -89,6 +122,11 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
 
         EzustLadaGomb.setText("Ezüst láda");
         EzustLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EzustLadaGomb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EzustLadaGombActionPerformed(evt);
+            }
+        });
 
         EzustLadaKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/ezust_lada.jpg"))); // NOI18N
 
@@ -124,6 +162,11 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
 
         BronzLadaGomb.setText("Bronz láda");
         BronzLadaGomb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BronzLadaGomb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BronzLadaGombActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BronzLadaPanelLayout = new javax.swing.GroupLayout(BronzLadaPanel);
         BronzLadaPanel.setLayout(BronzLadaPanelLayout);
@@ -153,10 +196,6 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(LeirasLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(AranyLadaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,7 +206,9 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
                 .addGap(40, 40, 40))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CimLabel)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LeirasLabel)
+                    .addComponent(CimLabel))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -188,6 +229,23 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void EzustLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EzustLadaGombActionPerformed
+        //JOptionPane.showMessageDialog(rootPane, "Nem jó a válasz, próbáld újra!");
+        tippeles = "Az ezüstöt választottad, sajnos nem nyertél.";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+    }//GEN-LAST:event_EzustLadaGombActionPerformed
+
+    private void BronzLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BronzLadaGombActionPerformed
+        //JOptionPane.showMessageDialog(rootPane, "Nem jó a válasz, próbáld újra!");
+        tippeles = "A bronz ládát választottad, sajnos nem nyertél";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+    }//GEN-LAST:event_BronzLadaGombActionPerformed
+
+    private void AranyLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AranyLadaGombActionPerformed
+        tippeles = "Az arany ládát választottad, nyertél.";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+    }//GEN-LAST:event_AranyLadaGombActionPerformed
 
     /**
      * @param args the command line arguments
