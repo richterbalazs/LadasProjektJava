@@ -4,46 +4,27 @@
  */
 package main;
 
-import java.awt.Event;
+// import java.awt.Event;
 import javax.swing.JOptionPane;
-import java.util.Random;
+// import java.util.Random;
 
 /**
  *
  * @author KosztolányiÁkos(SZF_
  */
 public class LadasProjektFelulet extends javax.swing.JFrame {
-    Random rn = new Random();
     String tippeles;
     String szoveg;
-    String jatek;
+    String joValasztas;
+    String rosszValasztas;
     
     
     public LadasProjektFelulet() {
-        initComponents();
-        tippeles = " ";
-        szoveg = " ";
-        jatek = Jatek();
+        joValasztas = "Gratulálok, sikerült megtalálnod a kincset.";
+        rosszValasztas = "Nem sikerült megtalálnod a kincset.";
     }
     
-    private String Jatek(){
-        if(tippeles == "Ezüst"){
-            return "asd";
-        }else if(tippeles == "Arany"){
-            return "Arany";
-        }else if(tippeles == "Bronz"){
-            return "Bronz";
-        }
-        return " ";
-    }
     
-      private void vegeredmeny() {
-        if(jatek == szoveg){
-            szoveg = "Sikeresen megtaláltad a kincset";
-        }else{
-            szoveg = "Sajnos nem sikerült megtaláni a kincset";
-        }
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -232,19 +213,19 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
 
     private void EzustLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EzustLadaGombActionPerformed
         //JOptionPane.showMessageDialog(rootPane, "Nem jó a válasz, próbáld újra!");
-        tippeles = "Az ezüstöt választottad, sajnos nem nyertél.";
-        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+        tippeles = "Ezüst:";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + rosszValasztas);
     }//GEN-LAST:event_EzustLadaGombActionPerformed
 
     private void BronzLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BronzLadaGombActionPerformed
         //JOptionPane.showMessageDialog(rootPane, "Nem jó a válasz, próbáld újra!");
-        tippeles = "A bronz ládát választottad, sajnos nem nyertél";
-        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+        tippeles = "Bronz:";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + rosszValasztas);
     }//GEN-LAST:event_BronzLadaGombActionPerformed
 
     private void AranyLadaGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AranyLadaGombActionPerformed
-        tippeles = "Az arany ládát választottad, nyertél.";
-        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + szoveg);
+        tippeles = "Arany:";
+        JOptionPane.showMessageDialog(rootPane, tippeles + "\n" + joValasztas);
     }//GEN-LAST:event_AranyLadaGombActionPerformed
 
     /**
@@ -275,10 +256,8 @@ public class LadasProjektFelulet extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LadasProjektFelulet().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new LadasProjektFelulet().setVisible(true);
         });
     }
 
